@@ -34,7 +34,7 @@ fun NavBar(
 ) {
     Row(
         modifier = modifier
-            .background(Color(0xFF1E1E1E))
+            .background(Color(0xFF121212))
             .padding(15.dp)
             .fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically,
