@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Affirmations App</string>
+    <string name="collection_topbar_display">Collection</string>
+    <string name="add_label_topbar">+</string>
+    <string name="star_icon_desc">star icon</string>
+    <string name="minus_icon_desc">minus icon</string>
+    <string name="affirmation_image_desc">affirmation image</string>
 </resources>
