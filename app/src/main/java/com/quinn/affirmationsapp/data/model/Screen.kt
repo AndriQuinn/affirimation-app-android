@@ -2,7 +2,7 @@ package com.quinn.affirmationsapp.data.model
 
 import androidx.compose.runtime.Composable
 import com.quinn.affirmationsapp.ui.screens.NewAffirmationScreen
-import com.quinn.affirmationsapp.ui.screens.home.HomeScreen
+import com.quinn.affirmationsapp.ui.screens.HomeScreen
 
 data class Screen(
     val route: String,

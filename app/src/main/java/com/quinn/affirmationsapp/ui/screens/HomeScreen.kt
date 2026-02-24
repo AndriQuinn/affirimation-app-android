@@ -33,12 +33,17 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.quinn.affirmationsapp.R
 import com.quinn.affirmationsapp.data.model.Affirmation
 import com.quinn.affirmationsapp.ui.components.NavBar
+import com.quinn.affirmationsapp.viewmodel.AffirmationViewModel
 
 @Composable
-fun HomeScreen(modifier: Modifier = Modifier) {
+fun HomeScreen(
+    modifier: Modifier = Modifier,
+//    affirmationViewModel: AffirmationViewModel = hiltViewModel()
+) {
 
     Scaffold(
         modifier = modifier.statusBarsPadding(),

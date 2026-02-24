@@ -7,13 +7,12 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.quinn.affirmationsapp.ui.components.NavBar
 
 @Composable
 fun NewAffirmationScreen(modifier: Modifier = Modifier) {
     Scaffold (
         topBar = {
-            NavBar()
+//            NavBar()
         }
     ) { innerPadding ->
             NewAffirmationScreen(Modifier.padding(innerPadding))
