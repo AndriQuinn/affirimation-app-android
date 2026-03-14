@@ -23,6 +23,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.quinn.affirmationsapp.ui.screens.HomeScreen
+import com.quinn.affirmationsapp.ui.screens.NewAffirmationScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -68,21 +70,8 @@ fun AffirmationApp(modifier: Modifier = Modifier) {
         },
         modifier = Modifier.background(Color(0xFF1E1E1E))
     ) {
-//        composable("home") { HomeScreen(navController = navController) }
-//        composable("addTaskScreen") { AddTaskScreen(navController = navController) }
-//        composable(
-//            route = "taskInfoScreen/{taskData}",
-//            arguments = listOf(navArgument("taskData") { type = NavType.StringType })
-//        ) { backStackEntry ->
-//            val taskUri = backStackEntry.arguments?.getString("taskData")
-//            val taskUriDecoded = Uri.decode(taskUri.toString())
-//            val taskData = Json.decodeFromString<TaskNode>(taskUriDecoded)
-//
-//            TaskInfoScreen(
-//                taskNode = taskData,
-//                navController = navController
-//            )
-//        }
+        composable("home") { HomeScreen(navController = navController) }
+        composable("newAffirmation") { NewAffirmationScreen(navController = navController) }
     }
 }
 

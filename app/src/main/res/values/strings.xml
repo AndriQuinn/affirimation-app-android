@@ -5,4 +5,11 @@
     <string name="star_icon_desc">star icon</string>
     <string name="minus_icon_desc">minus icon</string>
     <string name="affirmation_image_desc">affirmation image</string>
+    <string name="add_affirmation_btn_lbl">Add Affirmation</string>
+    <string name="tap_to_add_an_image_btn_lbl">Tap to add an image</string>
+    <string name="png_jpg_up_to_10mb_btn_lbl">PNG,JPG up to 10MB</string>
+    <string name="background_image_optional_textfield_lbl">Background Image (Optional)</string>
+    <string name="i_am_strong_capable_and_worthy_of_success_textfield_placeholder">I am strong, capable, and worthy of success</string>
+    <string name="your_affirmation_textfield_lbl">Your Affirmation</string>
+    <string name="create_affirmation_screen_title">Create Affirmation</string>
 </resources>

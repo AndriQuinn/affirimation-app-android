@@ -34,6 +34,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.quinn.affirmationsapp.R
 import com.quinn.affirmationsapp.data.model.Affirmation
 import com.quinn.affirmationsapp.ui.components.NavBar
@@ -42,6 +44,7 @@ import com.quinn.affirmationsapp.viewmodel.AffirmationViewModel
 @Composable
 fun HomeScreen(
     modifier: Modifier = Modifier,
+    navController: NavController
 //    affirmationViewModel: AffirmationViewModel = hiltViewModel()
 ) {
 
@@ -63,7 +66,7 @@ fun HomeScreen(
                     ) },
                     {
                         Button(
-                            onClick = {},
+                            onClick = { navController.navigate("newAffirmation") },
                             contentPadding = PaddingValues(8.dp),
                             shape = RoundedCornerShape(8.dp),
                             colors = buttonColors(
@@ -160,7 +163,6 @@ fun AffirmationCard(
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth()
             )
-            Spacer(Modifier.height(20.dp))
         }
     }
 }
@@ -172,6 +174,6 @@ fun AffirmationCard(
 )
 @Composable
 fun HomeScreenPreview() {
-    HomeScreen()
+    HomeScreen(navController = rememberNavController())
 }
 
