@@ -8,5 +8,5 @@ import androidx.room.PrimaryKey
 data class Affirmation(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val affirmation: String,
-    val imagePath: Int
+    val imagePath: String
 )

@@ -42,7 +42,7 @@ android {
 }
 
 dependencies {
-
+    implementation("io.coil-kt:coil-compose:2.6.0")
     // Hilt
     implementation(libs.google.hilt.android)
     ksp(libs.google.hilt.compiler)

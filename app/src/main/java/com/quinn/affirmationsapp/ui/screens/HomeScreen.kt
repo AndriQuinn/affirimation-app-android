@@ -44,8 +44,8 @@ import com.quinn.affirmationsapp.viewmodel.AffirmationViewModel
 @Composable
 fun HomeScreen(
     modifier: Modifier = Modifier,
-    navController: NavController
-//    affirmationViewModel: AffirmationViewModel = hiltViewModel()
+    navController: NavController,
+    affirmationViewModel: AffirmationViewModel = hiltViewModel()
 ) {
 
     Scaffold(
@@ -99,6 +99,12 @@ fun HomeScreenBody(modifier: Modifier = Modifier) {
             .padding(15.dp)
             .fillMaxSize()
     ) {
+        Text(
+            text = "My Affirmations",
+            style = MaterialTheme.typography.titleLarge,
+            color = Color.White
+        )
+        Spacer(Modifier.height(50.dp))
         AffirmationCard(
             affirmation = Affirmation(
                 imagePath = R.drawable.hayase_yuuka_pajama,

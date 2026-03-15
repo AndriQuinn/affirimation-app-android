@@ -8,7 +8,7 @@ import javax.inject.Inject
 class AffirmationRepository @Inject constructor(
     private val dao: AffirmationDao
 ) {
-    suspend fun addAffirmation(affirmationText: String, imagePath: Int) = dao.insert(Affirmation(affirmation = affirmationText, imagePath = imagePath))
+    suspend fun addAffirmation(affirmationText: String, imagePath: String) = dao.insert(Affirmation(affirmation = affirmationText, imagePath = imagePath))
 
     suspend fun removeTask(affirmation: Affirmation)  = dao.delete(affirmation)
 
